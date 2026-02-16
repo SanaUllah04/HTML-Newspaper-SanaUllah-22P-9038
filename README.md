@@ -1,5 +1,7 @@
 # HTML Newspaper Recreation - Mashriq
 
+![Original Newspaper](images/front Page.PNG)
+
 ## Student Information
 - **Name:** Sana Ullah
 - **Roll Number:** 22P-9038
