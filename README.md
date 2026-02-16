@@ -1,6 +1,6 @@
 # HTML Newspaper Recreation - Mashriq
 
-![Original Newspaper](images/front Page.PNG)
+![Original Newspaper](images/"front Page.PNG")
 
 ## Student Information
 - **Name:** Sana Ullah
