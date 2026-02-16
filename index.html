@@ -2,260 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>Mashriq - Newspaper Recreation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mashriq (The East) — Front Page Recreation</title>
 </head>
 
-<body style="margin: 12px; font-family: Georgia, 'Times New Roman', serif; color: #111;">
+<body style="margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; background: #fff; color: #111; line-height: 1.3;">
 
-  <!-- ==========================================================
-       HEADER (Masthead)
-       Purpose: Newspaper name + date line (translated)
-       NOTE: Update the date/issue text to EXACTLY match your scan.
-  =========================================================== -->
-  <header style="border: 2px solid #000; padding: 10px; text-align: center;">
-    <img src="images/masthead-logo.png" alt="Mashriq newspaper logo" width="90" style="vertical-align: middle;">
-    <h1 style="display: inline; margin-left: 10px; font-size: 44px; letter-spacing: 1px;">
-      MASHRIQ (The East)
-    </h1>
 
-    <p style="margin: 8px 0 0 0; font-size: 14px;">
-      <strong>Edition:</strong> Lahore • <strong>Date (translated):</strong> [e.g., Thursday, 1 November 1984] • <strong>Price:</strong> [Optional]
-    </p>
-  </header>
 
-  <!-- ==========================================================
-       NAV
-       Purpose: Semantic navigation + list requirement
-  =========================================================== -->
-  <nav style="border: 2px solid #000; border-top: none; padding: 8px;">
-    <strong>Quick Sections:</strong>
-    <ul style="margin: 6px 0 0 18px;">
-      <li><a href="#lead-story">Lead Story</a></li>
-      <li><a href="#nation">Nation</a></li>
-      <li><a href="#world">World</a></li>
-      <li><a href="#sports">Sports</a></li>
-    </ul>
-  </nav>
+<div style="border-left: 4px solid #111; border-right: 4px solid #111; background: #000; padding: 0; font-size: 18px; font-weight: bold; text-align: center; letter-spacing: 1px;">
 
-  <!-- ==========================================================
-       MAIN CONTENT
-       Purpose: Front-page layout using TABLE (required)
-  =========================================================== -->
-  <main style="border: 2px solid #000; border-top: none; padding: 10px;">
+  <!-- TOP HEADING -->
+  <div style="padding: 10px 20px; font-size: 40px; font-family: serif; color: #fff; background: #000;">
+    Three Sikh bodyguards attacked the Indian Prime Minister, firing from a stun weapon and a revolver, leaving her critically wounded with fourteen gunshot injuries to the chest and abdomen.
+  </div>
 
-    <!-- Reference note (optional) -->
-    <section style="margin-bottom: 10px;">
-      <h2 style="margin: 0 0 6px 0; font-size: 18px;">Reference Scan</h2>
-      <p style="margin: 0; font-size: 13px;">
-        Original scan saved as <strong>images/original-newspaper.jpg</strong> (not required to display, but kept for proof).
-      </p>
-    </section>
+  <!-- MAIN CONTENT ROW -->
+  <div style="display: flex; align-items: flex-start; gap: 20px; padding: 20px; background: #000;">
 
-    <!-- ======================================================
-         TOP STRIP (like the black header strip in your scan)
-    ======================================================= -->
-    <section style="border: 2px solid #000; padding: 8px; margin-bottom: 10px;">
-      <h2 style="margin: 0; font-size: 16px;">Top Strip (Short Headlines)</h2>
+    <!-- LEFT IMAGE -->
+    <div style="width: 25%; min-width: 200px;">
+    <img src="images/Original Portrait.PNG" alt="Portrait" style="width: 100%; height: 15%; border: 1px solid #111; display: block; margin-left: 5px;">
+    </div>
 
-      <p style="margin: 6px 0 0 0; font-size: 13px;">
-        • <strong>Security tightened in major cities</strong> as regional tensions rise. <br>
-        • <strong>Emergency meetings held</strong> after unexpected developments across the border. <br>
-        • <strong>Transport disruptions reported</strong> in several busy districts.
-      </p>
-    </section>
+    <!-- RIGHT SECTION (Centered Vertically) -->
+    <div style="width: 75%; display: flex; flex-direction: column; gap: 20px; justify-content: center;">
 
-    <!-- ======================================================
-         MAIN HEADLINE AREA (3 columns)
-         Left: Photo, Center: Big headline block, Right: Index box
-    ======================================================= -->
-    <table style="width: 100%; border-collapse: collapse;" border="1">
-      <tr>
-        <!-- LEFT: Big portrait photo -->
-        <td style="width: 28%; vertical-align: top; padding: 10px;">
-          <!-- Lead photo -->
-          <img src="images/indira.jpg" alt="Portrait photo used in the lead story" width="100%" style="border: 2px solid #000;">
-          <p style="margin: 6px 0 0 0; font-size: 12px;">
-            <em>Photo caption:</em> A major political figure at the center of today’s breaking news.
-          </p>
-        </td>
+      <!-- GREY BOXES -->
+      <div style="display: flex; gap: 20px; justify-content: center;">
 
-        <!-- CENTER: Big black headline block -->
-        <td style="width: 50%; vertical-align: top; padding: 10px;">
+        <div style="flex: 1; border: 2px solid #fff; background: #575757; color: #fff; padding: 30px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 18px;">
+          When the Prime Minister was rushed to the hospital, she was bleeding profusely from multiple gunshot wounds.
+        </div>
 
-          <!-- Small quote-style boxes (like your scan) -->
-          <section style="border: 2px solid #000; padding: 8px; margin-bottom: 10px;">
-            <h3 style="margin: 0; font-size: 14px;">Inside the Story</h3>
-            <p style="margin: 6px 0 0 0; font-size: 13px;">
-              Officials confirm a shocking incident; investigations begin immediately.
-              Eyewitness accounts conflict, while authorities urge calm.
-            </p>
-          </section>
+        <div style="flex: 1; border: 2px solid #fff; background: #575757; color: #fff; padding: 30px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 18px;">
+          A team of twelve senior doctors worked tirelessly for nearly two hours in an effort to save her life.
+        </div>
 
-          <!-- MAIN HEADLINE -->
-          <article id="lead-story" style="border: 2px solid #000;">
-            <div style="background: #111; color: #fff; padding: 16px;">
-              <!-- Translation + rephrase of "اندرا گاندھی کو قتل کر دیا گیا" -->
-              <h2 style="margin: 0; font-size: 44px; line-height: 1.05; letter-spacing: 0.5px;">
-                Indira Gandhi Assassinated
-              </h2>
-              <h3 style="margin: 10px 0 0 0; font-size: 18px; font-weight: normal;">
-                Nation in shock as security breach triggers unrest and emergency response
-              </h3>
-            </div>
+      </div>
 
-            <div style="padding: 10px;">
-              <h4 style="margin: 0 0 6px 0;">Body (Rephrased — 3–4 sentences)</h4>
-              <p style="margin: 0; font-size: 14px; line-height: 1.5;">
-                India’s Prime Minister, Indira Gandhi, was killed in an attack that has sent the country into crisis.
-                Senior officials announced that immediate security measures were activated across key locations.
-                Reports from the scene suggest confusion in the first hours, with multiple agencies rushing to secure the area.
-                Authorities appealed to the public to remain peaceful as the investigation moves forward.
-              </p>
-            </div>
-          </article>
+      <!-- MAIN HEADLINE BANNER -->
+      <div style="background: #111; color: #fff; padding: 18px 20px 10px 20px; text-align: center;  width: 100%;">
 
-        </td>
+        <div style="font-size: 160px; font-weight: bold; letter-spacing: 1px; font-family: serif; line-height: 1.1;">
+          Indira Gandhi Assassinated
+        </div>
 
-        <!-- RIGHT: “Index of the Week / Today’s List” style box -->
-        <td style="width: 22%; vertical-align: top; padding: 10px;">
-          <section style="border: 2px solid #000; padding: 10px;">
-            <h2 style="margin: 0; font-size: 18px; text-align: center;">Today’s Index</h2>
-            <p style="margin: 8px 0 6px 0; font-size: 13px;">
-              Key items on the front page:
-            </p>
 
-            <!-- List requirement (already satisfied in nav, but more is fine) -->
-            <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.5;">
-              <li>Curfew and safety alerts</li>
-              <li>Government reaction</li>
-              <li>Diplomatic signals</li>
-              <li>Market and transport impact</li>
-            </ul>
-          </section>
-        </td>
-      </tr>
-    </table>
+      <div style="width: 98%;  padding: 20px; box-sizing: border-box; border: 7px solid #ffffff; background: #ffffff; color: #000000; font-size: 25px; font-weight: bold;">
+        In the immediate aftermath of the attack, other members of the Prime Minister's security detail shot and killed two of the assailants, while a third was taken into custody.
+      </div>
 
-    <!-- ======================================================
-         LOWER GRID (like the bottom area in your scan)
-         3 columns of smaller stories + one image box
-    ======================================================= -->
-    <table style="width: 100%; border-collapse: collapse; margin-top: 10px;" border="1">
-      <tr>
-        <!-- LOWER LEFT -->
-        <td style="width: 33%; vertical-align: top; padding: 10px;">
-          <section id="nation">
-            <h2 style="margin: 0 0 6px 0; border-bottom: 2px solid #000; padding-bottom: 4px;">
-              Nation
-            </h2>
+      </div>
 
-            <article>
-              <h3 style="margin: 8px 0 6px 0;">Curfew imposed in sensitive districts after violence breaks out</h3>
-              <p style="margin: 0; font-size: 14px; line-height: 1.5;">
-                Following the assassination, several areas reported clashes and sudden closures.
-                Local administrations announced curfews to prevent further damage and panic.
-                Hospitals were placed on alert while police increased patrols near crowded zones.
-                Officials said the situation would be reviewed hour by hour.
-              </p>
-            </article>
+    </div>
 
-            <hr>
+  </div>
 
-            <article>
-              <h3 style="margin: 8px 0 6px 0;">Transportation slowed as checkpoints appear on major roads</h3>
-              <p style="margin: 0; font-size: 14px; line-height: 1.5;">
-                Travelers faced long delays as authorities set up verification points.
-                Bus services and intercity routes were reduced in several regions.
-                Railway stations increased screening and controlled entry during peak times.
-                Citizens were advised to avoid non-essential movement for the next two days.
-              </p>
-            </article>
-          </section>
-        </td>
+</div>
 
-        <!-- LOWER CENTER (includes an image like in your scan bottom) -->
-        <td style="width: 34%; vertical-align: top; padding: 10px;">
-          <section id="world">
-            <h2 style="margin: 0 0 6px 0; border-bottom: 2px solid #000; padding-bottom: 4px;">
-              World / Region
-            </h2>
+  
 
-            <article>
-              <h3 style="margin: 8px 0 6px 0;">International leaders send messages as uncertainty spreads</h3>
 
-              <img src="images/riot.jpg" alt="Photo illustrating unrest and emergency response" width="100%" style="border: 2px solid #000;">
 
-              <p style="margin: 6px 0 0 0; font-size: 14px; line-height: 1.5;">
-                Governments around the world expressed concern and called for stability.
-                Diplomatic channels became active as regional security assessments were updated.
-                Analysts warned that the next political steps could shape the region’s near future.
-                Observers urged calm to prevent the crisis from escalating further.
-              </p>
-            </article>
 
-            <hr>
 
-            <article>
-              <h3 style="margin: 8px 0 6px 0;">Markets react cautiously amid breaking developments</h3>
-              <p style="margin: 0; font-size: 14px; line-height: 1.5;">
-                Traders responded with caution as news spread through the morning.
-                Some areas reported early closures, while others saw reduced customer activity.
-                Business groups requested clear statements to avoid rumors and panic buying.
-                Economists suggested short-term disruption but expected recovery once calm returns.
-              </p>
-            </article>
-          </section>
-        </td>
 
-        <!-- LOWER RIGHT -->
-        <td style="width: 33%; vertical-align: top; padding: 10px;">
-          <section id="sports">
-            <h2 style="margin: 0 0 6px 0; border-bottom: 2px solid #000; padding-bottom: 4px;">
-              Sports & Briefs
-            </h2>
+  <!-- ========================= MAIN CONTENT ========================= -->
+  <main style="border-left: 4px solid #111; border-right: 4px solid #111; border-bottom: 4px solid #111; border-top: none; padding: 0 0 20px 0; background: #fff;">
 
-            <article>
-              <h3 style="margin: 8px 0 6px 0;">Local tournament postponed due to security arrangements</h3>
-              <p style="margin: 0; font-size: 14px; line-height: 1.5;">
-                Organizers delayed matches as law enforcement redirected resources.
-                Teams were informed late evening and advised to remain on standby.
-                Officials said new dates would be announced once conditions stabilize.
-                Fans were asked not to gather near venues until further notice.
-              </p>
-            </article>
+    <!-- ===================== MAIN 3-COLUMN LAYOUT ===================== -->
 
-            <hr>
+    <!-- MAIN CONTENT GRID -->
+    <div style="display: flex; flex-direction: row; width: 100%; margin: 0; padding: 0; gap: 0;">
+      <!-- LEFT: IMAGE -->
+      <div style="width: 28%; min-width: 200px; border-right: 2px solid #111; padding: 10px 8px 0 8px; display: flex; flex-direction: column; align-items: center;">
+        <div style="border: 3px solid #111; background: #fff; padding: 4px; margin-bottom: 10px; width: 100%;">
+          
+        </div>
+        <div style="border: 2px solid #111; background: #222; color: #fff; font-size: 15px; font-weight: bold; text-align: center; padding: 4px 0; margin-bottom: 10px; width: 100%;">Indira Gandhi</div>
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 13px; text-align: center; padding: 4px 6px; margin-bottom: 10px; width: 100%;">Prime Minister of India</div>
+      </div>
+      <!-- CENTER: MAIN STORY -->
+      <div style="width: 44%; min-width: 260px; border-right: 2px solid #111; padding: 10px 12px 0 12px;">
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 17px; font-weight: bold; text-align: center; padding: 6px 0; margin-bottom: 10px;">Emergency declared after PM's assassination</div>
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 14px; text-align: justify; padding: 8px 10px; margin-bottom: 10px;">
+          Indian Prime Minister Indira Gandhi was shot dead this morning by her two Sikh bodyguards. One attacker was killed on the spot while the other was arrested. Emergency has been declared across the country and security forces are on high alert.
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <div style="flex: 1; border: 2px solid #111; background: #222; color: #fff; font-size: 13px; padding: 6px; text-align: center;">Security: Sudden gunfire, forces responded immediately</div>
+          <div style="flex: 1; border: 2px solid #111; background: #222; color: #fff; font-size: 13px; padding: 6px; text-align: center;">Govt Appeal: Public urged to remain calm</div>
+        </div>
+      </div>
+      <!-- RIGHT: INDEX & UPDATES -->
+      <div style="width: 28%; min-width: 200px; padding: 10px 8px 0 8px; display: flex; flex-direction: column; gap: 10px;">
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 15px; font-weight: bold; text-align: center; padding: 6px 0;">Today's Headlines</div>
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 13px; padding: 6px 10px;">
+          <ul style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.7;">
+            <li>Security Measures</li>
+            <li>Government Reaction</li>
+            <li>Public Advisory</li>
+            <li>Regional Impact</li>
+            <li>International Response</li>
+            <li>Emergency Protocols</li>
+          </ul>
+        </div>
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 15px; font-weight: bold; text-align: center; padding: 6px 0;">Latest Updates</div>
+        <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 13px; padding: 6px 10px;">
+          <ol style="margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.7;">
+            <li>Curfew imposed in sensitive zones</li>
+            <li>Hospitals on alert</li>
+            <li>Security briefings continue</li>
+          </ol>
+        </div>
+      </div>
+    </div>
 
-            <section>
-              <h3 style="margin: 8px 0 6px 0;">Brief Updates</h3>
-              <ol style="margin: 0; padding-left: 18px; font-size: 14px; line-height: 1.5;">
-                <li>City police increase patrols around key public sites.</li>
-                <li>Hospitals instructed to maintain emergency readiness.</li>
-                <li>Public advised to verify news through official sources.</li>
-              </ol>
-            </section>
-          </section>
-        </td>
-      </tr>
-    </table>
+    <!-- ===================== LOWER STORIES ===================== -->
+
+    <!-- LOWER STORIES (BRIEF UPDATES) -->
+    <div style="margin: 18px 0 0 0; padding: 0 10px;">
+      <div style="border: 2px solid #111; background: #fff; color: #111; font-size: 17px; font-weight: bold; text-align: center; padding: 6px 0; margin-bottom: 10px;">Major News</div>
+      <div style="display: flex; gap: 10px;">
+        <div style="flex: 1; border: 2px solid #111; background: #fff; color: #111; font-size: 13px; padding: 8px 10px;">
+          <strong>Curfew Imposed</strong>: Immediate curfew in sensitive areas. Police and security forces on alert.
+        </div>
+        <div style="flex: 1; border: 2px solid #111; background: #fff; color: #111; font-size: 13px; padding: 8px 10px;">
+          <strong>Transport & Services</strong>: Public transport partially suspended, citizens advised to avoid unnecessary movement.
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== BRIEF UPDATES ===================== -->
+
+    <!-- BRIEF BULLETIN -->
+    <div style="margin: 18px 0 0 0; padding: 0 10px;">
+      <div style="border: 2px solid #111; background: #222; color: #fff; font-size: 15px; font-weight: bold; text-align: center; padding: 6px 0; margin-bottom: 10px;">Brief Updates</div>
+      <ol style="padding-left: 20px; font-size: 13px; line-height: 1.6; margin: 0; color: #fff; background: #222; border: 2px solid #111;">
+        <li style="padding: 4px 0;">All hospitals on emergency alert</li>
+        <li style="padding: 4px 0;">Transport and communication partially suspended</li>
+        <li style="padding: 4px 0;">High-level security and government meetings underway</li>
+        <li style="padding: 4px 0;">Public urged to cooperate with authorities</li>
+      </ol>
+    </div>
 
   </main>
 
-  <!-- ==========================================================
-       FOOTER
-       Purpose: Credits + validation note + student info
-  =========================================================== -->
-  <footer style="border: 2px solid #000; border-top: none; padding: 10px; font-size: 12px;">
-    <p style="margin: 0;">
-      <strong>Student:</strong> Sana Ullah | <strong>Roll No:</strong> [Your Roll No] | <strong>Section:</strong> [Your Section]
+  <!-- ========================= FOOTER ========================= -->
+
+  <footer style="border: 4px solid #111; border-top: none; padding: 10px 12px; font-size: 11px; background: #fff; color: #111; margin-top: 20px;">
+    <p style="margin: 0 0 4px 0; font-weight: bold;">
+      Student: Sana Ullah | Roll No: [Your Roll No] | Section: [Your Section]
     </p>
-    <p style="margin: 6px 0 0 0;">
-      <strong>Compliance:</strong> HTML-only layout (no external CSS/JS). Inline styles used for alignment and borders.
-      Validate at <em>https://validator.w3.org/</em>.
-    </p>
-    <p style="margin: 6px 0 0 0;">
-      <strong>Image Credits:</strong> Original front page scan stored in <em>images/original-newspaper.jpg</em>. Cropped images stored in <em>images/</em>.
+    <p style="margin: 0; font-size: 10px; color: #666;">
+      HTML-only newspaper recreation • No external CSS or JavaScript • Lahore Edition • 1984
     </p>
   </footer>
 
